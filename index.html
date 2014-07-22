@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>RequireJS: Load Module On Demand</title>
+
+    <!-- Load Kendo UI stylesheets -->
+    <link href="//cdn.kendostatic.com/2013.2.918/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="//cdn.kendostatic.com/2013.2.918/styles/kendo.default.min.css" rel="stylesheet" />
+
+    <!-- Our styles -->
+    <style>
+        #menu {
+            margin-top: 20px;
+        }
+    </style>
+
+    <!-- Load RequireJS and then load app.js -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.1/require.min.js" 
+            data-main="app">
+    </script>
+
+</head>
+<body>
+
+    <!-- Buttons to load modules on click -->
+    <button id="module01-button">Click to load module01 (Kendo UI Menu)</button>
+    <button id="module02-button">Click to load module02</button>
+
+    <!-- Kendo UI Menu HTML -->
+    <ul id="menu">
+        <li>Menu Item 1</li>
+        <li>Menu Item 2</li>
+        <li>Menu Item 3</li>
+        <li>Menu Item 4</li>
+        <li>Menu Item 5</li>
+    </ul>
+
+</body>
+</html>
